@@ -9,6 +9,6 @@ export class AuthController {
     @UseGuards(AzureOAuth2AuthGuard)
     @Get()
     Get(){
-        passport.authenticate("provider", { successRedirect: "/" })
+        return {};
     }
 }

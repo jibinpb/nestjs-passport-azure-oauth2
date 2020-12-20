@@ -15,12 +15,4 @@ export class MyAzureOAuth2Strategy extends PassportStrategy(AzureOAuth2Strategy,
             state: false
         });
     }
-
-    async validate(username: string, password: string): Promise<any> {
-        // const user = await this.authService.validateUser(username, password);
-        // if (!user) {
-        //   throw new UnauthorizedException();
-        // }
-        return;
-    }
 }
